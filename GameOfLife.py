@@ -10,13 +10,13 @@ OOOXOOOOOOOOOOOn\
 OOOOXOOOOOOOOOOn\
 OOXXXOOOOOOOOOOn\
 OOOOOOOOOOOOOOOn\
-OOOOOOOOOOOOOOOn\
+OOOOOXOOOXOOOOOn\
 OOOOOOOXOOOOOOOn\
-OOOOOOXOXOOOOOOn\
+OOOOOOXXXOOOOOOn\
 OOOOOOOXOOOOOOOn\
-OOOOOOOOOOOOOOOn\
-OOOOOOOOOOOOOOOn\
-OOOOOOOOOOOOOOOn\
+OOOOOXOOOOOOOOOn\
+OOOOOXOOOOOOOOOn\
+OOOOOXOOOOOOOOOn\
 OOOOOOOOOOOOOOOn\
 OOOOOOOOOOOOOOOn\
 OOOOOOOOOOOOOOOn\
@@ -39,7 +39,7 @@ for letter in start_string:
         print('b= ', b)
 
 # Function for evolution.
-# Implementign all rules of game of lige in a way that allways rewrites the whole next generation
+# Implementign all rules of game of life in a way that allways rewrites the whole next generation
 def evol(y,x):
     life = 0
     for aa in range(3):
