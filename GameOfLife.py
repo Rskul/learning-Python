@@ -21,6 +21,19 @@ OOOOOOOOOOOOOOOn\
 OOOOOOOOOOOOOOOn\
 OOOOOOOOOOOOOOOn\
 '
+#option for custom start from text file 
+inp = ''
+inp = input('Type yes if you have custom start position in a text file (if you enter any differend input starting position will be taken from code): ')
+if inp == 'yes':
+    inp = input('type in adress of the text file(if this fails start from code will be used):')
+    try:
+        file = open(inp,"r")
+        start_string = file.read()
+        file.close()
+    except:
+        print('file could',inp ,' not be found')
+  
+
 #Reading the start
 a=0
 b=0
@@ -35,8 +48,7 @@ for letter in start_string:
             a = 0
             b = b+1
     except:
-        print('a= ', a)
-        print('b= ', b)
+        print('Cell (', a ,',',b,'is out of bounds')
 
 # Function for evolution.
 # Implementign all rules of game of life in a way that allways rewrites the whole next generation
@@ -75,6 +87,7 @@ while(True):
     world = newW
     newW = [[0 for i in range(dim)]for j in range(dim)]
 
+    inp = ''
     inp = input('Type "end" to end the game:')
     if inp == 'end':
         break
