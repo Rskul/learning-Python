@@ -1,7 +1,7 @@
 Project and skills to learn on them
 
 Game of life - done
-cellular automata following rules of Conways game of life
+-cellular automata following rules of Conways game of life
   - Python basics
     - data types
     - if,else, elif
@@ -12,7 +12,8 @@ cellular automata following rules of Conways game of life
     - player input
 
 DnD Dice roller - to do
-import NPC from text file and save theis relevant stats
+
+-import NPC from text file and save theis relevant stats
   - Objects and classes
   - Read structured data from files
     - split data to relevant parts
